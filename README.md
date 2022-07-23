@@ -9,4 +9,4 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 
 -[x] Create server public file structure
 -[ ] .gitignore file
--[ ] Set up HTML file
+-[x] Set up HTML file

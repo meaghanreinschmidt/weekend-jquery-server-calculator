@@ -10,3 +10,4 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 -[x] Create server public file structure
 -[ ] .gitignore file
 -[x] Set up HTML file
+-[ ] Set up Basic CSS

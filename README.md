@@ -23,5 +23,5 @@ This project contains a functional calculator where the user can input two value
 -[x] update package.json file
 -[x] add server.js/client.js set up code
 
--[ ] create click handlers for calculator buttons
--[ ] 
+-[x] create click handlers for calculator buttons
+-[x] append number buttons to calculator display on clicks

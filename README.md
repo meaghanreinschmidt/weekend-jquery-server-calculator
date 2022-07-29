@@ -19,6 +19,6 @@ This project contains a functional calculator where the user can input two value
 -[x] Set up base HTML file
 -[x] Set up base CSS
 -[x] Update README file 
--[ ] npm init and npm install express
--[ ] update package.json file
+-[x] npm init and npm install express
+-[x] update package.json file
 -[ ] add server.js set up code

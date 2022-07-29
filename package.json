@@ -1,0 +1,24 @@
+{
+  "name": "weekend-jquery-server-calculator",
+  "version": "1.0.0",
+  "description": "## Description",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meaghanreinschmidt/weekend-jquery-server-calculator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meaghanreinschmidt/weekend-jquery-server-calculator/issues"
+  },
+  "homepage": "https://github.com/meaghanreinschmidt/weekend-jquery-server-calculator#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

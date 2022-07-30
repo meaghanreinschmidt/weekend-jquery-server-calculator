@@ -23,6 +23,10 @@ This project contains a functional calculator where the user can input two value
 -[x] update package.json file
 -[x] add server.js/client.js set up code
 
+### Client Side Code:
 -[x] create click handlers for calculator buttons
 -[x] append number buttons to calculator display on clicks
--[ ] append operation buttons to calculator display on clicks
+-[x] append operation buttons to calculator display on clicks
+-[x] create function to clear calculator display on C button
+
+### Server Side Code:

@@ -25,3 +25,4 @@ This project contains a functional calculator where the user can input two value
 
 -[x] create click handlers for calculator buttons
 -[x] append number buttons to calculator display on clicks
+-[ ] append operation buttons to calculator display on clicks

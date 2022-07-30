@@ -24,7 +24,14 @@ function appendToInput() {
 }
 
 function appendOperation() {
-    console.log('in appendOperation');
+    // Start with empty input field 
+    blankInput = $('.display-box').val();
+    // Target value of button clicks 
+    buttonClick = $(this).data('value');
+    // console.log('button clicked:', buttonClick);
+    newInput = (blankInput + buttonClick);
+    // Append button value to input field 
+    $('.display-box').val(newInput);
 }
 
 function equalButton() {

@@ -8,10 +8,18 @@ app.use(bodyParser.urlencoded({extended:true}))
 // Serve up static files (HTML, CSS, Client JS)
 app.use(express.static('server/public'));
 
-let calculationsArray = [];
+let operationHistory = [];
 
-// function to convert calculator display to functioning formula 
-// SWITCH STATEMENT? 
+app.get('/operation', (req, res) => {
+    res.send(operationHistory);
+});
+
+app.post('/operation', (req, res) => {
+    const operations = req.body
+    console.log(req.body);
+    let result;
+    
+})
 
 
 

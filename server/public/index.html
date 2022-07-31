@@ -15,8 +15,20 @@
     <header>
         <h1>Server Side Calculator</h1>
     </header>
+    <div>
 
-    <table class="calculator">
+    </div>
+    <input type="number" id="first-number">
+    <button data-value="+" value="+" id="calculator-operation">+</button>
+    <button data-value="-" value="-" id="calculator-operation">-</button>
+    <button data-value="*" value="*" id="calculator-operation">*</button>
+    <button data-value="/" value="/" id="calculator-operation">/</button>
+    <input type="number" id="second-number">
+    <button data-value="C" value="C" id="clear-button">C</button>
+
+    <div id="solution-containers"></div>
+    <!-- Fancy calculator build -->
+    <!-- <table class="calculator">
         <tr>
             <td colspan="3"> <input class="display-box" type="text" id="result" disabled /></td>
             <td> <input type="button" data-value="C" value="C" id="clear-button"/></td>
@@ -45,7 +57,7 @@
             <td> <input type="button" data-value="=" value="=" id="calculator-equal"/></td>
             <td> <input type="button" data-value="*" value="*" id="calculator-operation"/></td>
         </tr>
-    </table>
+    </table> -->
 </body>
 </html>
 <!-- jQuery will call readyNow() -->

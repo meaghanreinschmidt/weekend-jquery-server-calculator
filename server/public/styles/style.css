@@ -1,3 +1,5 @@
+/* Fancy Calculator Build --> */
+
 header {
     background-color: silver;
     color: black;
@@ -5,7 +7,7 @@ header {
     text-align: center;
 }
 
-.calculator {
+/* .calculator {
     padding: 10px;
     border-radius: 1em;
     height: 380px;
@@ -31,4 +33,4 @@ input[type=button] {
     border-radius: 5px;
     height: 70%;
     outline: white;
-}
+} */

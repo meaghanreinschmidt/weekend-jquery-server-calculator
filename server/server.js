@@ -8,7 +8,10 @@ app.use(bodyParser.urlencoded({extended:true}))
 // Serve up static files (HTML, CSS, Client JS)
 app.use(express.static('server/public'));
 
+let calculationsArray = [];
 
+// function to convert calculator display to functioning formula 
+// SWITCH STATEMENT? 
 
 
 

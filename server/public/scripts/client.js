@@ -9,12 +9,10 @@ let firstNumber;
 let operator;
 let secondNumber;
 
-// let operationHistory = [];
-
 function setFirstHalf() {
     let firstNumber = $('#first-number').val();
     console.log('this is the first number', firstNumber);
-    operator = $(this).data('value');
+    let operator = $(this).data('value');
     console.log('this is the operator', operator);
 }
 
@@ -27,7 +25,7 @@ $.ajax({
     url: '/operation',
     data: {
         firstNumber: $('#first-number').val(),
-        operator: operator,
+        operator: $('#calculator-operation').val(),
         secondNumber: $('#second-number').val()
     }
 }).then(function (response) {

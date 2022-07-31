@@ -1,37 +1,40 @@
 $(document).ready(onReady);
 
 function onReady() {
-    $('body').on('click', '#calculator-operation', setFirstHalf);
+    $('body').on('click', '#calculator-operation', setFirstPart);
     $('body').on('click', '#calculator-equal', sendOperationToServer);
+    $('body').on('click', '#clear-button', clearInputFields);
 }
 
 let firstNumber;
 let operator;
 let secondNumber;
 
-function setFirstHalf() {
-    let firstNumber = $('#first-number').val();
+function setFirstPart() {
+    firstNumber = $('#first-number').val();
     console.log('this is the first number', firstNumber);
-    let operator = $(this).data('value');
+    operator = $(this).data('value');
     console.log('this is the operator', operator);
 }
 
 function sendOperationToServer() {
     console.log('in sendOperationToServer');
-    let secondNumber = $('#second-number').val();
+    secondNumber = $('#second-number').val();
     console.log('this is the second number', secondNumber);
 $.ajax({
     type: 'POST',
     url: '/operation',
     data: {
-        firstNumber: $('#first-number').val(),
-        operator: $('#calculator-operation').val(),
-        secondNumber: $('#second-number').val()
+        firstNumber: firstNumber,
+        operator: operator,
+        secondNumber: secondNumber
     }
 }).then(function (response) {
     console.log(response);
     getOperation();
 });
+    $('#first-number').val('');
+    $('#second-number').val('');
 }
 
 function getOperation() {
@@ -41,13 +44,25 @@ function getOperation() {
     }).then(function (response) {
         for (let i = 0; i < response.length; i++) {
             let operation = response[i];
-        $('#solution-container').append(`
+        $('#operation-history').append(`
             <tr>
                 <td>${operation.firstNumber}</td>
-                <td>${operation.operator}</td>
+                <td> ${operation.operator} </td>
                 <td>${operation.secondNumber}</td>
+                <td> = </td>
+                <td>${operation.result}</td>
             </tr>
         `);
+        $('#solution').append(`
+            <tr>
+                <td>${operation.result}</td>
+            </tr>
+        `)
         }
     })
+}
+
+function clearInputFields() {
+    $('#first-number').val('');
+    $('#second-number').val('');
 }

@@ -29,5 +29,8 @@ You will notice that there is a file titled oldclient.js. This file is intended 
 -[x] append number buttons to calculator display on clicks
 -[x] append operation buttons to calculator display on clicks
 -[x] create function to clear calculator display on C button
+-[x] add solution container and append solution to DOM
 
 ### Server Side Code:
+-[x] add get request to get array
+-[x] add post request to send operation to server

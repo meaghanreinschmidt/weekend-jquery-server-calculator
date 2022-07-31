@@ -17,22 +17,23 @@ app.get('/operation', (req, res) => {
 app.post('/operation', (req, res) => {
     const operations = req.body
     console.log(req.body);
-    // let result;
-    // switch (operator) {
-    //     case '+':
-    //         result = firstNumber + secondNumber;
-    //         break;
-    //     case '-':
-    //         result = firstNumber - secondNumber;
-    //         break;
-    //     case '*':
-    //         result = firstNumber * secondNumber;
-    //         break;
-    //     case '/':
-    //         result = firstNumber / secondNumber;
-    //         break;   
-    // }
-    // operations.result = result;
+    let result;
+    switch (operations.operator) {
+        case '+':
+            result = parseFloat(operations.firstNumber) + parseFloat(operations.secondNumber);
+            break;
+        case '-':
+            result = operations.firstNumber - operations.secondNumber;
+            break;
+        case '*':
+            result = operations.firstNumber * operations.secondNumber;
+            break;
+        case '/':
+            result = operations.firstNumber / operations.secondNumber;
+            break;   
+    }
+    operations.result = result;
+    console.log(operations);
     operationHistory.push(operations);
     res.sendStatus(200);
 })

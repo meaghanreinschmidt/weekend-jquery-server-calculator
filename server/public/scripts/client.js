@@ -18,24 +18,10 @@ function setFirstHalf() {
     console.log('this is the operator', operator);
 }
 
-// function sendOperationToServer() {
-//     let firstNumber = $('#first-number').val();
-//     let secondNumber = $('#second-number').val();
-//     console.log('this is the second number', secondNumber);
-//     let operation = {
-//         firstNumber: firstNumber,
-//         operator: operator,
-//         secondNumber: secondNumber
-//     };
-//     console.log(operation);
-//     operationHistory.push(operation);
-//     console.log(operationHistory);
-//     $('#first-number').val('');
-//     $('#second-number').val('');
-// }
-
 function sendOperationToServer() {
     console.log('in sendOperationToServer');
+    let secondNumber = $('#second-number').val();
+    console.log('this is the second number', secondNumber);
 $.ajax({
     type: 'POST',
     url: '/operation',
@@ -67,14 +53,3 @@ function getOperation() {
         }
     })
 }
-// function sendOperationToServer() {
-//     $.ajax({
-//         type: 'POST',
-//         url: '/operation',
-//         data: {
-//             firstNumber: firstNumber,
-//             operator: operator,
-//             secondNumber: secondNumber
-//         }
-//     })
-// }

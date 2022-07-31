@@ -18,7 +18,23 @@ app.post('/operation', (req, res) => {
     const operations = req.body
     console.log(req.body);
     let result;
-    
+    switch (result) {
+        case '+':
+            result = firstNumber + secondNumber;
+            break;
+        case '-':
+            result = firstNumber - secondNumber;
+            break;
+        case '*':
+            result = firstNumber * secondNumber;
+            break;
+        case '/':
+            result = firstNumber / secondNumber;
+            break;   
+    }
+    operations.result = result;
+    operationHistory.push(operations);
+    res.sendStatus(200);
 })
 
 

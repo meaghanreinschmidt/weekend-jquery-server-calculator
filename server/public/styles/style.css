@@ -7,6 +7,21 @@ header {
     text-align: center;
 }
 
+#content {
+    outline: solid 6px black;
+    margin-top: 50;
+    margin-left: 250;
+    margin-right: 250;
+    text-align: center;
+}
+
+#solution {
+    justify-content: center;
+}
+
+#operation-history {
+    justify-content: center;
+}
 
 /* .calculator {
     padding: 10px;

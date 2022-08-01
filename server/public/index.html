@@ -15,26 +15,25 @@
     <header>
         <h1>Server Side Calculator</h1>
     </header>
-    <div>
-
+    <div id="content">
+        <input type="number" id="first-number">
+        <br />
+        <br />
+        <button data-value="+" value="+" id="calculator-operation">+</button>
+        <button data-value="-" value="-" id="calculator-operation">-</button>
+        <button data-value="*" value="*" id="calculator-operation">*</button>
+        <button data-value="/" value="/" id="calculator-operation">/</button>
+        <br />
+        <br />
+        <input type="number" id="second-number">
+        <br />
+        <br />
+        <button data-value="=" value="=" id="calculator-equal">=</button>
+        <button data-value="C" value="C" id="clear-button">C</button>
+        <div id="solution">Solution: </div>
+        <br />
+        <div id="operation-history">Operation History</div>
     </div>
-    <input type="number" id="first-number">
-    <br />
-    <br />
-    <button data-value="+" value="+" id="calculator-operation">+</button>
-    <button data-value="-" value="-" id="calculator-operation">-</button>
-    <button data-value="*" value="*" id="calculator-operation">*</button>
-    <button data-value="/" value="/" id="calculator-operation">/</button>
-    <br />
-    <br />
-    <input type="number" id="second-number">
-    <br />
-    <br />
-    <button data-value="=" value="=" id="calculator-equal">=</button>
-    <button data-value="C" value="C" id="clear-button">C</button>
-    <div id="solution">Solution: </div>
-    <br />
-    <div id="operation-history">Operation History</div>
     <!-- Fancy calculator build -->
     <!-- <table class="calculator">
         <tr>

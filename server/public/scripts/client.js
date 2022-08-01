@@ -53,11 +53,13 @@ function getOperation() {
                 <td>${operation.result}</td>
             </tr>
         `);
+        $('#solution').empty();
         $('#solution').append(`
             <tr>
-                <td>${operation.result}</td>
+                <td>Solution: ${operation.result}</td>
             </tr>
         `)
+        
         }
     })
 }

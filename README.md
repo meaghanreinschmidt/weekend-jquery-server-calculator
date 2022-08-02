@@ -8,8 +8,9 @@ This project contains a functional calculator where the user can input two value
 
 There is a bit of commented out code on both the HTML and CSS files that were there for the stretch goal attempt to make the page look more like a calculator. These will stay in the final project so that the stretch goal may be attempted in the future. 
 
-## Screenshot
+## Example
 
+<img width="1017" alt="Screen Shot 2022-08-02 at 12 06 36 PM" src="https://user-images.githubusercontent.com/98852538/182434507-284940bd-a517-4b54-8e96-b20e54363915.png">
 
 ## Steps: 
 -[x] Create server public file structure

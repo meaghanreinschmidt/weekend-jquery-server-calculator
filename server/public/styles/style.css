@@ -7,21 +7,32 @@ header {
     text-align: center;
 }
 
-#content {
-    outline: solid 6px black;
-    margin-top: 50;
+h5 {
+    text-align: center;
+    color: grey;
+}
+#calculator {
+    outline: solid 6px red;
+    margin-top: 40;
     margin-left: 250;
     margin-right: 250;
     text-align: center;
+    padding: 8px;
 }
 
-#solution {
-    justify-content: center;
+table {
+    border: 1px solid black;
+    table-layout: fixed;
+    /* width: 200px; */
+    margin-top: 50;
 }
 
-#operation-history {
-    justify-content: center;
+td {
+    text-align: center;
+    vertical-align: middle;
 }
+
+
 
 /* .calculator {
     padding: 10px;

@@ -10,6 +10,7 @@ let firstNumber;
 let operator;
 let secondNumber;
 
+// function to set the first number and operator in the equation
 function setFirstPart() {
     firstNumber = $('#first-number').val();
     console.log('this is the first number', firstNumber);
@@ -17,6 +18,7 @@ function setFirstPart() {
     console.log('this is the operator', operator);
 }
 
+// function to send the second number and full equation to server 
 function sendOperationToServer() {
     console.log('in sendOperationToServer');
     secondNumber = $('#second-number').val();
@@ -37,6 +39,7 @@ $.ajax({
     $('#second-number').val('');
 }
 
+// function to get elements of operation 
 function getOperation() {
     $.ajax({
         type: 'GET',
@@ -44,19 +47,19 @@ function getOperation() {
     }).then(function (response) {
         for (let i = 0; i < response.length; i++) {
             let operation = response[i];
-        $('#operation-history').append(`
+        $('#operation-table').append(`
             <tr>
                 <td>${operation.firstNumber}</td>
-                <td> ${operation.operator} </td>
+                <td>${operation.operator}</td>
                 <td>${operation.secondNumber}</td>
                 <td> = </td>
                 <td>${operation.result}</td>
             </tr>
         `);
-        $('#solution').empty();
-        $('#solution').append(`
+        $('#solution-table').empty();
+        $('#solution-table').append(`
             <tr>
-                <td>Solution: ${operation.result}</td>
+                <td>${operation.result}</td>
             </tr>
         `)
         

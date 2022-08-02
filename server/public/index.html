@@ -15,7 +15,8 @@
     <header>
         <h1>Server Side Calculator</h1>
     </header>
-    <div id="content">
+    <h5>Instructions: Input a number into the first field, click on an operator button, and input a number into the second field. After you click the "equals" button, the solution and your equation will print below.</h2>
+    <div id="calculator">
         <input type="number" id="first-number">
         <br />
         <br />
@@ -30,10 +31,26 @@
         <br />
         <button data-value="=" value="=" id="calculator-equal">=</button>
         <button data-value="C" value="C" id="clear-button">C</button>
-        <div id="solution">Solution: </div>
-        <br />
-        <div id="operation-history">Operation History</div>
     </div>
+    <table align="center">
+        <thead>
+            <tr>
+                <th>Solution</th>
+            </tr>
+        </thead>
+        <tbody id="solution-table"></tbody>
+    </table>
+    <table align="center">
+        <thead>
+            <tr>
+                <th colspan="5">Operation History</th>
+            </tr>
+        </thead>
+        <tbody id="operation-table"></tbody>
+    </table>
+    <!-- <div id="operation-history">
+        <th>Operation History</th>
+    </div> -->
     <!-- Fancy calculator build -->
     <!-- <table class="calculator">
         <tr>

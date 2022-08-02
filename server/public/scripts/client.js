@@ -45,6 +45,7 @@ function getOperation() {
         type: 'GET',
         url: '/operation'
     }).then(function (response) {
+        $('#operation-table').empty();
         for (let i = 0; i < response.length; i++) {
             let operation = response[i];
         $('#operation-table').append(`

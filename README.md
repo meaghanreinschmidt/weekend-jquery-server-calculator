@@ -8,11 +8,8 @@ This project contains a functional calculator where the user can input two value
 
 There is a bit of commented out code on both the HTML and CSS files that were there for the stretch goal attempt to make the page look more like a calculator. These will stay in the final project so that the stretch goal may be attempted in the future. 
 
-## ADD SCREENSHOT/ANIMATION HERE
+## Screenshot
 
-## Prerequisites?
-
-## Installation? 
 
 ## Steps: 
 -[x] Create server public file structure
@@ -34,3 +31,5 @@ There is a bit of commented out code on both the HTML and CSS files that were th
 ### Server Side Code:
 -[x] add get request to get array
 -[x] add post request to send operation to server
+
+

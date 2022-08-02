@@ -32,4 +32,6 @@ There is a bit of commented out code on both the HTML and CSS files that were th
 -[x] add get request to get array
 -[x] add post request to send operation to server
 
+-[ ] deploy to heroku
+
 

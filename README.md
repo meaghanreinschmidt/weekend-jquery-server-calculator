@@ -20,7 +20,7 @@ These will stay in the final project so that the stretch goal may be attempted i
 
 ## Prerequisites
 
-- Node.js
+- [Node.js](https://nodejs.org/en/)
 
 ## Installation
 
@@ -28,14 +28,26 @@ These will stay in the final project so that the stretch goal may be attempted i
 2. Run `npm start` in your terminal
 3. Navigate to `localhost:5000` in browser (change port number if necessary)
 
+## Usage
+
+1. As a user, I want to be able to enter a number into the first input field, click a mathematical operator, and enter another number into the second input field. 
+2. As a user, I want to click the `=` and have the solution of the mathematical operations display on the page.
+3. As a user, I want to be able to see the history of my operations so I know which operations I have done previously.
+4. As a user, I want to be able to clear the input fields and operator in case I want to start over. 
+
+
 ## Built With
 
-1. HTML
-2. CSS
-3. JavaScript
-4. JQuery
-5. Node.js
-6. Express.js
+1. ![image](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+2. ![image](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+3. ![image](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+4. ![image](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
+5. ![image](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+6. ![image](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
 
 ## Acknowledgement 
 
@@ -44,42 +56,41 @@ who equipped and helped me to make this application a reality.
 
 ## Support 
 
-IF you have suggestions or issues, please email me at [mreinschmidt@hotmail.com](mailto:mreinschmidt@hotmail.com)
+If you have suggestions or issues, please email me at [mreinschmidt@hotmail.com](mailto:mreinschmidt@hotmail.com)
 
 ## Project Checklist: 
+
 ### Setup
--[x] Create server public file structure
--[x] check .gitignore file (already set up)
--[x] Set up base HTML file
--[x] Set up base CSS
--[x] Update README file 
--[x] npm init and npm install express
--[x] update package.json file
--[x] add server.js/client.js set up code
+- [X] Create server public file structure
+- [X] Check .gitignore file (already set up)
+- [X] Set up base HTML file
+- [X] Set up base CSS
+- [X] `npm init` and `npm install express`
+- [X] Update package.json file
+- [X] Add server.js/client.js set up code
 
 ### Functionality
-### Client Side Code:
--[x] create click handlers for calculator buttons
--[x] append number buttons to calculator display on clicks
--[x] append operation buttons to calculator display on clicks
--[x] create function to clear calculator display on C button
--[x] add solution container and append solution to DOM
--[x] add get request to get array
--[x] add post request to send operation to server
+- [X] Create click handlers for calculator buttons
+- [X] Append number buttons to calculator display on clicks
+- [X] Append operation buttons to calculator display on clicks
+- [X] Create function to clear calculator display on C button
+- [X] Add solution container and append solution to DOM
+- [X] Add get request to get array
+- [X] Add post request to send operation to server
 
 ### Final Touches
--[x] deploy to heroku
+- [X] Deploy to Heroku
 
 ### README updates
--[x] Project NAme
--[x] Project Description
--[x] Link to deployed app
--[x] Screenshot
--[x] Prerequisites 
--[x] Installation
--[x] Built With
--[x] License
--[x] Acknowledgement
--[x] Support
--[x] Project Checklist
+- [X] Project Name
+- [X] Project Description
+- [X] Link to deployed app
+- [X] Screenshot
+- [X] Prerequisites
+- [X] Installation - run npm install express
+- [X] Built With
+- [X] License
+- [X] Acknowledgement
+- [X] Support
+- [X] Project Checklist
 

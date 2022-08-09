@@ -2,7 +2,7 @@
 
 ## Description
 
-Duration: 1 Week
+*Duration: 1 Week*
 
 This project contains a functional calculator where the user can input two values and a mathematical operator. 
 When the `=` button is clicked, the outcome of the operation is displayed on the client. 
@@ -51,7 +51,7 @@ These will stay in the final project so that the stretch goal may be attempted i
 
 ## Acknowledgement 
 
-Thansk to [Prime Digital Academy](https://www.primeacademy.io/) and the members of the Phrygian cohor
+Thanks to [Prime Digital Academy](https://www.primeacademy.io/) and the members of the Phrygian cohor
 who equipped and helped me to make this application a reality. 
 
 ## Support 
